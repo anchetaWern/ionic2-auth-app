@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic2 Auth
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="email" [value]="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" [value]="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full outline (click)='login("email");'>Login</button>
+
+  <button ion-button full icon-left (click)='login("fb");'>
+    <ion-icon name="logo-facebook"></ion-icon>Login with Facebook
+  </button>
+  <button ion-button clear (click)='signup();'>Don't have an account?</button>
+</ion-content>

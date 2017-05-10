@@ -1,0 +1,6 @@
+{
+  "name": "authApp",
+  "app_id": "YOUR IONIC APP ID",
+  "v2": true,
+  "typescript": true
+}
